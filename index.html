@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>SANDAAR JAWAB — Dimaag lagao tum, dimaag hilayenge hum!</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Sandaar Jawab home"><span class="brand-mark">SJ</span><span>SANDAAR <b>JAWAB</b></span></a>
+    <nav><a class="active" href="#home">Home</a><a href="#chat">Chat</a><a href="#examples">Examples</a></nav>
+    <span class="language">Hinglish</span>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="intro">
+        <p class="eyebrow">AI answers, with a sense of humour.</p>
+        <h1>SANDAAR <span>JAWAB</span></h1>
+        <p class="tagline">Dimaag lagao tum,<br><strong>dimaag hilayenge hum!</strong></p>
+        <p class="sub">Kuch bhi poochho. Jawab milega sahi, seedha aur thoda funny.</p>
+      </div>
+      <div class="mascot" aria-hidden="true"><div class="antenna"></div><div class="robot"><div class="eyes"><i></i><i></i></div><div class="mouth"></div></div><div class="shadow"></div></div>
+    </section>
+
+    <section class="chat-panel" id="chat">
+      <div class="chat-heading"><div><span class="online"></span><b>Ask SANDAAR JAWAB</b></div><button id="clearBtn" class="clear-btn" type="button">New chat</button></div>
+      <div id="conversation" class="conversation" aria-live="polite">
+        <div class="welcome"><div class="bot-avatar">SJ</div><div><b>Haan ji, kya poochhna hai?</b><p>Sawaal bhejo. Gyaan bhi milega, boring lecture nahi.</p></div></div>
+      </div>
+      <form id="chatForm" class="composer">
+        <textarea id="question" rows="1" maxlength="4000" placeholder="Apna sawaal yahan likho..." aria-label="Your question" required></textarea>
+        <button id="sendBtn" type="submit" aria-label="Send question">➜</button>
+      </form>
+      <p class="hint">Enter to send · Shift + Enter for a new line</p>
+    </section>
+
+    <section id="examples" class="examples">
+      <div class="section-title"><h2>Try asking</h2><span>Ek sawaal chun lo</span></div>
+      <div class="example-grid">
+        <button class="example" data-question="Black hole kya hota hai?"><span>🌌</span><b>Black hole kya hota hai?</b><small>Science</small></button>
+        <button class="example" data-question="India ka Constitution kisne banaya?"><span>🇮🇳</span><b>India ka Constitution kisne banaya?</b><small>History</small></button>
+        <button class="example" data-question="Photosynthesis simple words mein samjhao."><span>🌱</span><b>Photosynthesis kaise hota hai?</b><small>Study</small></button>
+        <button class="example" data-question="Time management kaise improve karun?"><span>⏳</span><b>Time manage kaise karun?</b><small>Life</small></button>
+      </div>
+    </section>
+  </main>
+  <footer><span>SANDAAR <b>JAWAB</b></span><span>Knowledge first. Comedy included.</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
